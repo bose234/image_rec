@@ -12,7 +12,7 @@ app.use(cors())
 
 app.use(bodyParser.json());
 
-app.post('/upload', async (req, res) => {
+app.post('/', async (req, res) => {
   try {
     let inputImage;
     if (req.body.imageUrl) {
